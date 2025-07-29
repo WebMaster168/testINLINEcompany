@@ -574,6 +574,9 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .header__tab + .header__tab {
+      margin-left: 0;
+  }
 }
 @media (max-width: 480px) {
   .cards__item {

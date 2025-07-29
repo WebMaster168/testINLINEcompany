@@ -63,7 +63,11 @@
     .footer{
         &__info{
             width: 100%;
+     
         }
+    }
+    .header__tab + .header__tab {
+        margin-left: 0;
     }
     .form {
         &__row{
