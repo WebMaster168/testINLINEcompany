@@ -81,6 +81,8 @@ a{
         opacity: 1;
         &.hidden{
             display: none;
+            width: 0px !important;
+            height: 0px !important;
         }
         &.cards__item-opacity{
             opacity: 0;
