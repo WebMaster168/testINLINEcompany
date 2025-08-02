@@ -2,13 +2,12 @@ const tabs = document.querySelectorAll('.header__tab');
 const cards = document.querySelectorAll('.cards__item');
 
 const getVisibleSlides = () => {
-    // Получаем все слайды и фильтруем только видимые
     return Array.from(document.querySelectorAll('.swiper-slide')).filter(slide => !slide.classList.contains('hidden'));
 };
 
 const renderBullet = (index, className) => {
     const visibleSlides = getVisibleSlides();
-    // Если индекс меньше количества видимых слайдов, создаем пагинацию
+    
     return index < visibleSlides.length ? `<span class="${className}"></span>` : '';
 };
 
